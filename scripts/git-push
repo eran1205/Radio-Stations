@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$BRANCH" == "master" ]
+then
+    echo info::git-push:: on master branch, pushing new version number to git
+    git push -u origin $BRANCH
+fi
