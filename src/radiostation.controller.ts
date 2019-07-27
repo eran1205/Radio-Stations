@@ -4,7 +4,7 @@ import { CreateRadioStationDTO } from './create-radiostation.dto';
 import { async } from 'rxjs/internal/scheduler/async';
 import { RadioStation } from './radiostation.interface';
 
-@Controller('radiostations')
+@Controller('api/radiostations')
 export class RadioStationController {
   constructor(private readonly radioStationService: RadioStationService) {}
   private logger = new Logger('RadioStationController', true);
